@@ -1,0 +1,369 @@
+* {
+	margin: 0;
+	font-family: "Calibri Light", Calibri, "Times New Roman";
+}
+
+@font-face {
+    font-family: "Segoe WP Light";
+    src: url("../fonts/SegoeWP-Semibold.ttf"); /* TTF file for CSS3 browsers */
+}
+
+html
+{
+	height: 100%;
+	width: 100%;
+	background: url(../images/wallpapers/wallpaper.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
+}
+
+#space
+{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -40px;
+}
+
+#taskbar
+{
+	width:100%;
+	height:50px;
+	position: absolute;
+	bottom: 0;
+	background-color:rgba(0,0,0,0.1);
+	display:block;
+	border-top:1px #000;
+	z-index: 100;
+}
+
+#startButton
+{
+	width: 60px;
+	height: 50px;
+	float: left;
+	background-color:rgba(0,0,0,0);
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#startButton:hover
+{
+	background-color: #000;
+}
+
+#startMenuDropDown {
+	position:absolute;
+	bottom:50px;
+	width: 420px;
+	z-index: 100;
+}
+#startMenuOpen {
+	background: url("images/open.png") no-repeat scroll 68px 10px #414142;
+	color: #ececec;
+	cursor: pointer;
+	float: left;
+	font-size: 26px;
+	margin: -2px 0 0 10%;
+	padding: 0 15px 2px;
+	text-decoration: none;
+	width: 63px;
+}
+#startMenuDiv {
+	background-color:rgba(0,0,0,0.1);
+	width:400px;
+	height: 600px;
+	color: #000;
+	text-align:left;
+	padding: 10px 10px 10px 10px;
+}
+
+#startMenuLeftDiv{
+	width: 60%;
+	height: 100%;
+	background-color: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	float: left;
+	border: 1px groove;
+}
+
+#startMenuRightDiv{
+	width: 38%;
+	float:right;
+	height: 100%;
+	margin-top: 35px;
+	margin-bottom: -35px;
+}
+
+#startMenuDropDown .startMenuClose {
+	background-image: url(images/close.png);
+}
+#startMenuDropDown #startMenuDashboard {
+	display: none;
+}
+
+.startMenuApp{
+	width: 100%;
+	height:8%;
+	background: none;
+	border: none;
+	border: 1px solid #fff;
+	line-height:42px;
+	padding: 0;
+}
+
+.startMenuApp:hover{
+	background: #f0f9ff; /* Old browsers */
+	background: -moz-linear-gradient(top, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f9ff), color-stop(47%,#cbebff), color-stop(100%,#a1dbff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=0 ); /* IE6-9 */
+	border: 1px solid #7597C1;
+}
+
+.startMenuAppImage{
+	height: 98%;
+	width: 45px;
+	float: left;
+	margin: 0;
+	margin-left:2px;
+}
+
+.startMenuUserImage{
+	width: 80px;
+	position: absolute;
+	top: -40px;
+	margin-left: 36px;
+}
+.startMenuAppText{
+	text-align: left;
+	float: left;
+	margin-left: 7px;
+}
+
+.startMenuAppRight{
+	width: 100%;
+	height:7%;
+	background: none;
+	border: none;
+	padding: 1px;
+	line-height:42px;
+}
+
+.startMenuAppRight:hover{
+	background: rgb(246,248,249); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(246,248,249,0.5) 0%, rgba(229,235,238,0.5) 50%, rgba(215,222,227,0.5) 51%, rgba(245,247,249,0.5) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(246,248,249,0.5)), color-stop(50%,rgba(229,235,238,0.5)), color-stop(51%,rgba(215,222,227,0.5)), color-stop(100%,rgba(245,247,249,0.5))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(246,248,249,0.5) 0%,rgba(229,235,238,0.5) 50%,rgba(215,222,227,0.5) 51%,rgba(245,247,249,0.5) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(246,248,249,0.5) 0%,rgba(229,235,238,0.5) 50%,rgba(215,222,227,0.5) 51%,rgba(245,247,249,0.5) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(246,248,249,0.5) 0%,rgba(229,235,238,0.5) 50%,rgba(215,222,227,0.5) 51%,rgba(245,247,249,0.5) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(246,248,249,0.5) 0%,rgba(229,235,238,0.5) 50%,rgba(215,222,227,0.5) 51%,rgba(245,247,249,0.5) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
+	
+	padding: 0px;
+	border: 1px groove #000;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.startMenuAppTextRight{
+	text-align: left;
+	float: left;
+	margin-left: 7px;
+	color: #fff;
+}
+
+.taskbarprogram
+{
+	width: 70px;
+	height: 50px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #fff;
+	margin-right: 4px;
+	background: rgba(255,255,255,0.5);
+	float: left;
+	z-index: 1000;
+}
+
+.taskbarprogram img{
+	width: 45px;
+	height: 45px;
+}
+
+.startButtonIcon
+{
+	position: absolute;
+	bottom: 2px;
+	left: 2px;
+	height: 36px;
+	width: 36px;
+	z-index: 1000;
+	margin: 5px 5px 5px 9px;
+}
+
+.window
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:300px;
+    height:200px;
+    font-family:verdana;
+	margin-top: 40px;
+    font-size:13px;
+    padding:10px;
+    background: rgba(255,255,255,0.66);
+    border: 2px solid rgba(0,0,0,0.5); 
+    border-radius: 4px; padding: 8px;
+    z-index:10;
+}
+    
+.maximizeWindow
+{
+    display:relative;
+    cursor:pointer;
+    margin:0;
+	margin-left: 2px;
+    float:right;
+    height:10px;
+    width:14px;
+    padding:0 10px 5px 10px;
+    text-align:center;
+    background: rgba(0,0,0,0.5);
+    font-weight:bold;
+    font-size:11px;
+    color:white;
+    border-radius:3px;
+    z-index:999999;
+}
+
+.minimizeWindow
+{
+    display:relative;
+    cursor:pointer;
+    margin:0;
+	margin-left: 2px;
+    float:right;
+    height:10px;
+    width:14px;
+    padding:0 10px 5px 10px;
+    text-align:center;
+    background: rgba(0,0,0,0.5);
+    font-weight:bold;
+    font-size:11px;
+    color:white;
+    border-radius:3px;
+    z-index:999999;
+}
+	
+.closeWindow
+{
+    display:relative;
+    cursor:pointer;
+    margin:0;
+	margin-left: 2px;
+    float:right;
+    height:10px;
+    width:14px;
+    padding:0 10px 5px 10px;
+    background-color:red;
+    text-align:center;
+    font-weight:bold;
+    font-size:11px;
+    color:white;
+    border-radius:3px;
+    z-index:999999;
+}
+
+.controlPanelImage{
+	border: 1px dashed #fff;
+	width: 200px;
+	height: auto;
+	float: left;
+}
+
+.controlPanelImage:hover{
+	opacity: 0.5;
+	filter:alpha(opacity=50); /* For IE8 and earlier */
+}
+
+#clock{
+	width: 85px;
+	padding-top: 3px;
+	margin-right: 10px;
+	float: right;
+	text-align: center;
+	height: 47px;
+	color: #fff;
+	font-size: 1.0em;
+}
+
+.calculatorbutton{
+	width: 100%;
+	height: 100%;
+}
+
+.calculatorbuttoncalculate{
+
+}
+
+.calculatorbuttonzero{
+
+}
+
+.taskbarbutton{
+}
+
+.desktopIcon
+{
+	background: none;
+	border: none;
+	width: 60px;
+	height: 60px;
+}
+
+.desktopIcon:hover
+{
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid;
+	border-color: #fff;
+	width: 60px;
+	height: 60px;
+}
+
+.desktopIcon img
+{
+	width: 50px;
+	height: 50px;
+}
+
+#calculatorTable{
+	width: 100%;
+	height: 75%;
+	position: absolute;
+	line-height:0;
+}
+
+#calculatorTable tr{
+	height: 16.666%;
+}
+
+#browser {
+height: 98%;
+}
+
+#browser object{
+	height: 100%;
+	width: 100%;
+}
