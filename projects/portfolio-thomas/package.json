@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://laurens-lamberts.github.io/projects/portfolio-thomas",
+  "homepage": "https://laurens-lamberts.github.io/projects/portfolio-thomas/public",
   "private": true,
   "devDependencies": {
     "@types/jest": "^27.5.2",
