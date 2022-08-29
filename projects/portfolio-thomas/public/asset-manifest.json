@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/projects/portfolio-thomas/static/css/main.073c9b0a.css",
+    "main.js": "/projects/portfolio-thomas/static/js/main.9336ccef.js",
+    "static/js/787.1ed0c42c.chunk.js": "/projects/portfolio-thomas/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Diamond.fbx": "/projects/portfolio-thomas/static/media/Diamond.17e5235b83e097c22183.fbx",
+    "index.html": "/projects/portfolio-thomas/index.html",
+    "main.073c9b0a.css.map": "/projects/portfolio-thomas/static/css/main.073c9b0a.css.map",
+    "main.9336ccef.js.map": "/projects/portfolio-thomas/static/js/main.9336ccef.js.map",
+    "787.1ed0c42c.chunk.js.map": "/projects/portfolio-thomas/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.9336ccef.js"
+  ]
+}
