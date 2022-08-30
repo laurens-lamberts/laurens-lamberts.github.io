@@ -12,10 +12,25 @@ import {
 import { EffectComposer, DepthOfField } from '@react-three/postprocessing';
 /* import { Rhino3dmLoader } from 'three/examples/jsm/loaders/3DMLoader'; */
 
+function KeyLight({ brightness, color }: { brightness: number; color: string }) {
+  return (
+    <rectAreaLight
+      width={3}
+      height={3}
+      color={color}
+      intensity={brightness}
+      position={[-2, 0, 5]}
+      //lookAt={[0, 0, 0]}
+      //penumbra={1}
+      castShadow
+    />
+  );
+}
+
 function Scene() {
   const path = require('../Diamond.fbx');
   const fbx = useFBX(path);
-  return <primitive object={fbx} scale={0.5} />;
+  return <primitive object={fbx} scale={0.8} />;
 
   /* const dm = useLoader(Rhino3dmLoader, '/models/Diamond.3dm');
   return <primitive object={dm} scale={0.0005} />; */
@@ -42,9 +57,13 @@ const Rendering = () => {
         borderRadius: 16,
       }}
     >
-      <ambientLight intensity={1} />
+      {/* <ambientLight intensity={1} /> */}
+      <pointLight position={[20, 20, 10]} color={0xffffff} intensity={20} />
+      {/* <KeyLight brightness={5.6} color={'#ffc9f9'} /> */}
       <Suspense fallback={<Loader />}>
-        <Scene />
+        <group rotation={[-Math.PI / 2, 0, 0]} position={[0, -Math.PI / 2, 0]}>
+          <Scene />
+        </group>
         {/* Soft shadows, they stop rendering after 1500 frames */}
         {/* <AccumulativeShadows
           temporal
@@ -75,9 +94,9 @@ const Rendering = () => {
           enablePan={false}
           enableZoom={true}
           /* minPolarAngle={Math.PI / 6} */
-          maxPolarAngle={Math.PI / 3}
+          maxPolarAngle={Math.PI / 2}
         />
-        <Environment preset="studio" background />
+        <Environment preset="park" background />
       </Suspense>
     </Canvas>
   );
