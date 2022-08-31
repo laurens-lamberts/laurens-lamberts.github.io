@@ -29,10 +29,15 @@ function KeyLight({ brightness, color }: { brightness: number; color: string }) 
   );
 }
 
-function Scene() {
-  const path = require('../assets/Diamond.fbx');
-  const fbx = useFBX(path);
-  return <primitive object={fbx} scale={0.9} />;
+export type RenderingType = {
+  path: string;
+  scale: number;
+  position: any;
+};
+
+function Scene({ item }: { item: RenderingType }) {
+  const fbx = useFBX(item.path);
+  return <primitive object={fbx} scale={item.scale} />;
 
   /* const dm = useLoader(Rhino3dmLoader, path);
   return <primitive object={dm} scale={0.0005} />; */
@@ -59,7 +64,9 @@ function Loader() {
   );
 }
 
-const Rendering = () => {
+const Rendering = ({ item }: { item: RenderingType }) => {
+  const { position } = item;
+
   return (
     <Canvas
       camera={{ position: [-10, 10, 15], fov: 50 }}
@@ -68,17 +75,15 @@ const Rendering = () => {
       /* camera={{ position: [-30, 35, -15], near: 30, far: 55, fov: 12 }} */ style={{
         height: 400,
         width: 400,
-        borderRadius: 16,
+        borderRadius: 8,
+        marginBottom: 8,
       }}
     >
       {/* <ambientLight intensity={1} /> */}
-      <pointLight position={[20, 20, 10]} color={0xffffff} intensity={20} />
+      <pointLight position={[20, 20, 10]} color={0xffffff} intensity={1} />
       {/* <KeyLight brightness={5.6} color={'#ffc9f9'} /> */}
       <Suspense fallback={<Loader />}>
         <Dome />
-        <group rotation={[-Math.PI / 2, 0, 0]} position={[0, -Math.PI / 2, 0]}>
-          <Scene />
-        </group>
         {/* Soft shadows, they stop rendering after 1500 frames */}
         {/* <AccumulativeShadows
           temporal
@@ -101,16 +106,20 @@ const Rendering = () => {
         </AccumulativeShadows> */}
         {/* Effects */}
         <EffectComposer>
-          <DepthOfField target={[0, 0, 3]} /* focusRange={0.15} */ bokehScale={8} />
+          <DepthOfField target={[0, 0, 3]} /* focusRange={0.15} */ focalLength={0.15} bokehScale={8} />
         </EffectComposer>
         <OrbitControls
           autoRotate
-          autoRotateSpeed={0.5}
+          autoRotateSpeed={0.7}
           enablePan={false}
           enableZoom={true}
-          /* minPolarAngle={Math.PI / 6} */
-          maxPolarAngle={Math.PI / 2}
+          /* minPolarAngle={Math.PI / 8} */
+          maxPolarAngle={Math.PI / 1.5}
         />
+
+        <group rotation={[-Math.PI / 2, 0, 0]} position={position}>
+          <Scene item={item} />
+        </group>
         {/* <Environment preset="park" background /> */}
       </Suspense>
     </Canvas>
