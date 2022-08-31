@@ -1,16 +1,18 @@
 {
   "files": {
     "main.css": "/projects/portfolio-thomas/public/static/css/main.073c9b0a.css",
-    "main.js": "/projects/portfolio-thomas/public/static/js/main.ce03b745.js",
+    "main.js": "/projects/portfolio-thomas/public/static/js/main.dc81e09c.js",
     "static/js/787.1ed0c42c.chunk.js": "/projects/portfolio-thomas/public/static/js/787.1ed0c42c.chunk.js",
-    "static/media/Diamond.fbx": "/projects/portfolio-thomas/public/static/media/Diamond.17e5235b83e097c22183.fbx",
+    "static/media/Vergrootglas.fbx": "/projects/portfolio-thomas/public/static/media/Vergrootglas.379e89903e44d9d15b74.fbx",
+    "static/media/dome.jpeg": "/projects/portfolio-thomas/public/static/media/dome.622e2d0d0f9fc9bcf623.jpeg",
+    "static/media/Diamond.fbx": "/projects/portfolio-thomas/public/static/media/Diamond.d04d1f15a7ae6d4eaee2.fbx",
     "index.html": "/projects/portfolio-thomas/public/index.html",
     "main.073c9b0a.css.map": "/projects/portfolio-thomas/public/static/css/main.073c9b0a.css.map",
-    "main.ce03b745.js.map": "/projects/portfolio-thomas/public/static/js/main.ce03b745.js.map",
+    "main.dc81e09c.js.map": "/projects/portfolio-thomas/public/static/js/main.dc81e09c.js.map",
     "787.1ed0c42c.chunk.js.map": "/projects/portfolio-thomas/public/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.ce03b745.js"
+    "static/js/main.dc81e09c.js"
   ]
 }
