@@ -10,6 +10,8 @@ import {
   useProgress,
 } from '@react-three/drei';
 import { EffectComposer, DepthOfField } from '@react-three/postprocessing';
+import * as THREE from 'three';
+import { Texture } from 'three';
 /* import { Rhino3dmLoader } from 'three/examples/jsm/loaders/3DMLoader'; */
 
 function KeyLight({ brightness, color }: { brightness: number; color: string }) {
@@ -28,12 +30,24 @@ function KeyLight({ brightness, color }: { brightness: number; color: string }) 
 }
 
 function Scene() {
-  const path = require('../Diamond.fbx');
+  const path = require('../assets/Diamond.fbx');
   const fbx = useFBX(path);
-  return <primitive object={fbx} scale={0.8} />;
+  return <primitive object={fbx} scale={0.9} />;
 
-  /* const dm = useLoader(Rhino3dmLoader, '/models/Diamond.3dm');
+  /* const dm = useLoader(Rhino3dmLoader, path);
   return <primitive object={dm} scale={0.0005} />; */
+}
+
+function Dome() {
+  const path = require('../assets/dome.jpeg');
+
+  const texture = useLoader(THREE.TextureLoader, path);
+  return (
+    <mesh>
+      <sphereBufferGeometry attach="geometry" args={[500, 60, 40]} />
+      <meshBasicMaterial attach="material" map={texture as Texture} side={THREE.BackSide} />
+    </mesh>
+  );
 }
 
 function Loader() {
@@ -61,6 +75,7 @@ const Rendering = () => {
       <pointLight position={[20, 20, 10]} color={0xffffff} intensity={20} />
       {/* <KeyLight brightness={5.6} color={'#ffc9f9'} /> */}
       <Suspense fallback={<Loader />}>
+        <Dome />
         <group rotation={[-Math.PI / 2, 0, 0]} position={[0, -Math.PI / 2, 0]}>
           <Scene />
         </group>
@@ -96,7 +111,7 @@ const Rendering = () => {
           /* minPolarAngle={Math.PI / 6} */
           maxPolarAngle={Math.PI / 2}
         />
-        <Environment preset="park" background />
+        {/* <Environment preset="park" background /> */}
       </Suspense>
     </Canvas>
   );
