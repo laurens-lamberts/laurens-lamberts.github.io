@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.9d2c4429.css",
-    "main.js": "/static/js/main.ec5a1e2f.js",
-    "static/css/215.31d6cfe0.chunk.css": "/static/css/215.31d6cfe0.chunk.css",
-    "static/js/215.51d81348.chunk.js": "/static/js/215.51d81348.chunk.js",
+    "main.js": "/static/js/main.cc460e2c.js",
+    "static/css/525.31d6cfe0.chunk.css": "/static/css/525.31d6cfe0.chunk.css",
+    "static/js/525.499180c8.chunk.js": "/static/js/525.499180c8.chunk.js",
     "static/js/651.ef36213f.chunk.js": "/static/js/651.ef36213f.chunk.js",
-    "static/js/144.e81b76c2.chunk.js": "/static/js/144.e81b76c2.chunk.js",
+    "static/js/144.22a1fb99.chunk.js": "/static/js/144.22a1fb99.chunk.js",
     "canvaskit.wasm": "/canvaskit.wasm",
     "static/media/MaterialCommunityIcons.ttf": "/static/media/MaterialCommunityIcons.5d42b4e60858731e7b65.ttf",
     "static/media/appicon.png": "/static/media/appicon.16f021fbb2e173e332c8.png",
@@ -16,13 +16,13 @@
     "static/media/appicon-lgp.png": "/static/media/appicon-lgp.4a1a2624fe5996147f2a.png",
     "index.html": "/index.html",
     "main.9d2c4429.css.map": "/static/css/main.9d2c4429.css.map",
-    "main.ec5a1e2f.js.map": "/static/js/main.ec5a1e2f.js.map",
-    "215.51d81348.chunk.js.map": "/static/js/215.51d81348.chunk.js.map",
+    "main.cc460e2c.js.map": "/static/js/main.cc460e2c.js.map",
+    "525.499180c8.chunk.js.map": "/static/js/525.499180c8.chunk.js.map",
     "651.ef36213f.chunk.js.map": "/static/js/651.ef36213f.chunk.js.map",
-    "144.e81b76c2.chunk.js.map": "/static/js/144.e81b76c2.chunk.js.map"
+    "144.22a1fb99.chunk.js.map": "/static/js/144.22a1fb99.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9d2c4429.css",
-    "static/js/main.ec5a1e2f.js"
+    "static/js/main.cc460e2c.js"
   ]
 }
