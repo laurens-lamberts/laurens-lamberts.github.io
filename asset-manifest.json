@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.9d2c4429.css",
-    "main.js": "/static/js/main.ec4cfda5.js",
+    "main.js": "/static/js/main.cf07d09a.js",
     "static/css/387.46e0b515.chunk.css": "/static/css/387.46e0b515.chunk.css",
-    "static/js/387.6500c7d1.chunk.js": "/static/js/387.6500c7d1.chunk.js",
+    "static/js/387.5057c40e.chunk.js": "/static/js/387.5057c40e.chunk.js",
     "static/js/651.ef36213f.chunk.js": "/static/js/651.ef36213f.chunk.js",
     "static/js/236.a5b64d1f.chunk.js": "/static/js/236.a5b64d1f.chunk.js",
     "canvaskit.wasm": "/canvaskit.wasm",
@@ -35,14 +35,14 @@
     "static/media/appicon-lgp.png": "/static/media/appicon-lgp.4a1a2624fe5996147f2a.png",
     "index.html": "/index.html",
     "main.9d2c4429.css.map": "/static/css/main.9d2c4429.css.map",
-    "main.ec4cfda5.js.map": "/static/js/main.ec4cfda5.js.map",
+    "main.cf07d09a.js.map": "/static/js/main.cf07d09a.js.map",
     "387.46e0b515.chunk.css.map": "/static/css/387.46e0b515.chunk.css.map",
-    "387.6500c7d1.chunk.js.map": "/static/js/387.6500c7d1.chunk.js.map",
+    "387.5057c40e.chunk.js.map": "/static/js/387.5057c40e.chunk.js.map",
     "651.ef36213f.chunk.js.map": "/static/js/651.ef36213f.chunk.js.map",
     "236.a5b64d1f.chunk.js.map": "/static/js/236.a5b64d1f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9d2c4429.css",
-    "static/js/main.ec4cfda5.js"
+    "static/js/main.cf07d09a.js"
   ]
 }
