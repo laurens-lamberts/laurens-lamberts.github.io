@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.82d48485.css",
-    "main.js": "/static/js/main.b92ed6f2.js",
-    "static/js/533.5502c947.chunk.js": "/static/js/533.5502c947.chunk.js",
+    "main.js": "/static/js/main.a5ac50a3.js",
+    "static/js/504.0c475234.chunk.js": "/static/js/504.0c475234.chunk.js",
     "static/js/651.ef36213f.chunk.js": "/static/js/651.ef36213f.chunk.js",
-    "static/js/236.a5b64d1f.chunk.js": "/static/js/236.a5b64d1f.chunk.js",
+    "static/js/311.8a8b5b4a.chunk.js": "/static/js/311.8a8b5b4a.chunk.js",
+    "static/media/react-native-popout-demo-2024-01-06.gif": "/static/media/react-native-popout-demo-2024-01-06.434b9ae16430d20ade56.gif",
     "canvaskit.wasm": "/canvaskit.wasm",
     "static/media/screenshot-02.PNG": "/static/media/screenshot-02.091c688aa47edd579e81.PNG",
     "static/media/MaterialCommunityIcons.ttf": "/static/media/MaterialCommunityIcons.5d42b4e60858731e7b65.ttf",
@@ -34,13 +35,13 @@
     "static/media/appicon-lgp.png": "/static/media/appicon-lgp.4a1a2624fe5996147f2a.png",
     "index.html": "/index.html",
     "main.82d48485.css.map": "/static/css/main.82d48485.css.map",
-    "main.b92ed6f2.js.map": "/static/js/main.b92ed6f2.js.map",
-    "533.5502c947.chunk.js.map": "/static/js/533.5502c947.chunk.js.map",
+    "main.a5ac50a3.js.map": "/static/js/main.a5ac50a3.js.map",
+    "504.0c475234.chunk.js.map": "/static/js/504.0c475234.chunk.js.map",
     "651.ef36213f.chunk.js.map": "/static/js/651.ef36213f.chunk.js.map",
-    "236.a5b64d1f.chunk.js.map": "/static/js/236.a5b64d1f.chunk.js.map"
+    "311.8a8b5b4a.chunk.js.map": "/static/js/311.8a8b5b4a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.82d48485.css",
-    "static/js/main.b92ed6f2.js"
+    "static/js/main.a5ac50a3.js"
   ]
 }
